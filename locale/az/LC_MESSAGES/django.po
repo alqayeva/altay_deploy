@@ -1,0 +1,93 @@
+# Azərbaycan dilinə tərcümə
+# Translator: Gulare Alqayeva <EMAIL@ADDRESS>, 2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Wheel Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-02 21:28+0400\n"
+"PO-Revision-Date: 2025-11-02 23:30\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\layout.html:90
+msgid "Home"
+msgstr "Əsas səhifə"
+
+#: .\templates\layout.html:103
+msgid "Shop"
+msgstr "Mağaza"
+
+#: .\templates\layout.html:117
+msgid "Blog"
+msgstr "Bloq"
+
+#: .\templates\layout.html:130
+msgid "About"
+msgstr "Haqqımızda"
+
+#: .\templates\layout.html:143
+msgid "Contact"
+msgstr "Əlaqə"
+
+#: .\templates\layout.html:189
+msgid "Select catagories"
+msgstr "Kateqoriyanı seç"
+
+#: .\templates\layout.html:512
+msgid "Search"
+msgstr "Axtar"
+
+#: .\templates\layout.html:522
+msgid "Search Products"
+msgstr "Məhsulları axtar"
+
+#: .\templates\layout.html:598
+msgid "About Us"
+msgstr "Bizim haqqımızda"
+
+#: templates/info/home.html:33
+msgid "Shop now"
+msgstr "İndi alış-veriş et"
+
+#: templates/info/home.html:140
+msgid "Explore"
+msgstr "Kəşf et"
+
+#: templates/info/home.html:140
+msgid "Products"
+msgstr "Məhsullar"
+
+#: templates/info/home.html:220
+msgid "Deal Of"
+msgstr "Günün Sövdəsi"
+
+#: templates/info/home.html:220
+msgid "The Day"
+msgstr "Günün"
+
+#: templates/info/home.html:228
+msgid "SHOP AND SAVE BIG"
+msgstr "AL və BÖYÜK QƏNAƏT ET"
+
+#: templates/info/home.html:278
+msgid "Hurry Up!"
+msgstr "Tələs!"
+
+#: templates/info/home.html:278
+msgid "Offer ends in :"
+msgstr "Təklif bitir :"
+
+#: templates/info/home.html:285
+msgid "Contact Us"
+msgstr "Bizimlə əlaqə"
+
+#: templates/info/home.html:328
+msgid "Blog & article"
+msgstr "Blog & məqalə"
+
+#: templates/info/home.html:334
+msgid "Read more"
+msgstr "Ətraflı oxu"

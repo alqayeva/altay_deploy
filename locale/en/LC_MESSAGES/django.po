@@ -1,0 +1,140 @@
+# English translation
+# Copyright (C) 2025 Wheel Project
+# This file is distributed under the same license as the Wheel Project package.
+# Translator: Gulare Alqayeva <EMAIL@ADDRESS>, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Wheel Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-02 21:28+0400\n"
+"PO-Revision-Date: 2025-11-02 21:15+0400\n"
+"Last-Translator: Gulare Alqayeva <EMAIL@ADDRESS>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\layout.html:90 .\templates\layout.html:223
+#: .\templates\layout.html:335 .\templates\layout.html:458
+#: .\templates\layout.html:739
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\layout.html:103 .\templates\layout.html:230
+#: .\templates\layout.html:340 .\templates\layout.html:479
+#: .\templates\layout.html:746
+msgid "Shop"
+msgstr "Shop"
+
+#: .\templates\layout.html:117 .\templates\layout.html:237
+#: .\templates\layout.html:345 .\templates\layout.html:753
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\layout.html:130 .\templates\layout.html:244
+#: .\templates\layout.html:351 .\templates\layout.html:793
+msgid "About"
+msgstr "About"
+
+#: .\templates\layout.html:143 .\templates\layout.html:251
+#: .\templates\layout.html:358 .\templates\layout.html:786
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\layout.html:189
+msgid "Select catagories"
+msgstr "Select categories"
+
+#: .\templates\layout.html:512
+msgid "Search"
+msgstr "Search"
+
+#: .\templates\layout.html:522
+msgid "Search Products"
+msgstr "Search Products"
+
+#: .\templates\layout.html:598
+msgid "About Us"
+msgstr "About Us"
+
+#: .\templates\layout.html:715
+msgid "General"
+msgstr "General"
+
+#: .\templates\layout.html:762
+msgid "Resources"
+msgstr "Resources"
+
+#: .\templates\layout.html:800
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: .\templates\layout.html:809
+msgid "FIND IT FAST"
+msgstr "FIND IT FAST"
+
+#: .\templates\layout.html:831
+msgid "Disk"
+msgstr "Disk"
+
+#: .\templates\layout.html:836
+msgid "Teker"
+msgstr "Tire"
+
+#: .\templates\layout.html:841
+msgid "Remen"
+msgstr "Belt"
+
+#: .\templates\layout.html:862
+msgid "BÜtün hüquqlar Azərbaycan konstitusiyası ilə qorunur"
+msgstr "All rights are protected by the Constitution of Azerbaijan"
+
+
+# English translations for Wheel Project
+#: templates/info/home.html:33
+msgid "Shop now"
+msgstr "Shop now"
+
+#: templates/info/home.html:157
+msgid "Explore"
+msgstr "Explore"
+
+#: templates/info/home.html:157
+msgid "Products"
+msgstr "Products"
+
+#: templates/info/home.html:205
+msgid "Deal Of"
+msgstr "Deal Of"
+
+#: templates/info/home.html:205
+msgid "The Day"
+msgstr "The Day"
+
+#: templates/info/home.html:212
+msgid "SHOP AND SAVE BIG"
+msgstr "SHOP AND SAVE BIG"
+
+#: templates/info/home.html:228
+msgid "Hurry Up!"
+msgstr "Hurry Up!"
+
+#: templates/info/home.html:228
+msgid "Offer ends in :"
+msgstr "Offer ends in :"
+
+#: templates/info/home.html:234
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: templates/info/home.html:346
+msgid "Blog & article"
+msgstr "Blog & article"
+
+#: templates/info/home.html:351
+msgid "Read more"
+msgstr "Read more"
+

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block main %}
+<main class="main__content_wrapper">
+   <section class="blog__section section--padding">
+    <div class="container">
+      <div class="section__heading border-bottom mb-30">
+        <h2 class="section__heading--maintitle">Blog <span>& article</span></h2>
+      </div>
+      <div class="blog__section--inner">
+        {% include 'includes/details.html' %}
+      </div>
+    </div>
+  </section>
+
+   
+</main>
+{% endblock %}

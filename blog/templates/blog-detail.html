@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block main %}
+    
+   <main class="main__content_wrapper">
+        
+
+
+        <!-- Start blog details section -->
+<section class="blog__details--section section--padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="blog__details--wrapper">
+                            <div class="entry__blog">
+                                <div class="blog__post--header mb-30">
+                                    <h2 class="post__header--title mb-15">{{ blog.title }}</h2>
+                                    <p class="blog__post--meta">
+                                        Posted by : admin / On : {{ blog.date_posted }} / In : 
+                                        <a class="blog__post--meta__link" href="#">Company, Image</a>
+                                    </p>                                     
+                                </div>
+                                <div class="blog__thumbnail mb-30">
+                                    <img class="blog__thumbnail--img border-radius-10" src="{{ blog.image.url }}" alt="{{ blog.title }}" style="width:100%; max-width:850px; height:auto; display:block; margin:0 auto;">
+                                </div>
+
+                                <div class="blog__details--content">
+                                    <p class="blog__details--content__desc mb-20">{{ blog.content }}</p>
+                                    <h3 class="blog__details--content__subtitle mb-25">{{ blog.description }}</h3>
+                                
+                                </div>
+                        </div>
+
+        
+    </div>
+</div>
+
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="blog__sidebar--widget left widget__area">
+                            <div class="single__widget widget__search widget__bg">
+                                <form class="widget__search--form" action="{% url 'shop:shop' %}" method="GET" >
+                                    <label>
+                                        <input class="widget__search--form__input" placeholder="Search..." type="text">
+                                    </label>
+                                    <button class="widget__search--form__btn" aria-label="search button">
+                                        <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="single__widget widget__bg">
+                                        <h2 class="widget__title h3">Categories</h2>
+                                        <ul class="widget__categories--menu">
+                                            <!-- Optional "All Products" link -->
+                                            <li class="widget__categories--menu__list">
+                                            <a href="{% url 'shop:shop' %}"
+                                                class="widget__categories--menu__label d-flex align-items-center {% if not selected_category %}active{% endif %}">
+                                                <span class="widget__categories--menu__text">All Products</span>
+                                            </a>
+                                            </li>
+
+                                            {% for category in categories %}
+                                            <li class="widget__categories--menu__list">
+                                                <a href="{% url 'shop:shop_by_category' category.id %}"
+                                                class="widget__categories--menu__label d-flex align-items-center {% if selected_category and selected_category.id == category.id %}active{% endif %}">
+                                                {% if category.image %}
+                                                    <img class="widget__categories--menu__img"
+                                                        src="{{ category.image.url }}"
+                                                        alt="{{ category.name }}">
+                                                {% endif %}
+                                                <span class="widget__categories--menu__text">{{ category.name }}</span>
+                                                </a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                            </div>
+                            <div class="single__widget widget__bg">
+                                <h2 class="widget__title h3">Post Article</h2>
+                                <div class="widget__post--article">
+                                {% for blog in blogs %}
+                                    <div class="post__article--items d-flex align-items-center">
+                                        <div class="post__article--thumbnail">
+                                             {% if blog.image %}
+                                                <img class="blog__card--thumbnail__img" src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                                            {% endif %} 
+                                        </div>
+                                        <div class="post__article--content">
+                                            <h3 class="post__article--content__title"><a href="{% url 'blog:blog_detail' id=blog.id %}">{{ blog.title }}</a></h3>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End blog details section -->
+    
+    </main>
+
+
+{% endblock %}

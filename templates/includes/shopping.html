@@ -1,0 +1,28 @@
+<div class="swiper-slide">
+  <article class="product__card">
+    <div class="product__card--thumbnail">
+      <a class="product__card--thumbnail__link display-block" href="{% url 'shop:shop' %}">
+        <img class="product__card--thumbnail__img product__primary--img" src="{{ product.primary_image.url }}" alt="{{ product.name }}">
+        {% if product.secondary_image %}
+        <img class="product__card--thumbnail__img product__secondary--img" src="{{ product.secondary_image.url }}" alt="{{ product.name }}">
+        {% endif %}
+      </a>
+      {% if product.discount_percent %}
+      <span class="product__badge">-{{ product.discount_percent }}%</span>
+      {% endif %}
+    </div>
+
+    <div class="product__card--content">
+      <h3 class="product__card--title">
+        <a href="{% url 'shop:shop'  %}">{{ product.name }}</a>
+      </h3>
+      <div class="product__card--price">
+        <span class="current__price">${{ product.current_price }}</span>
+        {% if product.old_price %}
+        <span class="old__price">${{ product.old_price }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+</div>
+ 
