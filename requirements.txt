@@ -74,7 +74,7 @@ watchdog==4.0.2
 watchfiles==1.0.5
 websockets==15.0.1
 yarl==1.20.1
-gunicorn==22.1.0
+gunicorn>=20.1.0
 whitenoise==1.4.0
 dj-database-url==1.0.0
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
